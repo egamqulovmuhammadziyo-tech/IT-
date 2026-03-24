@@ -7,12 +7,17 @@ const selectedCourseLockedStorageKey = "selected-course-locked";
 const isStaticDevHost =
   window.location.hostname === "127.0.0.1" ||
   window.location.hostname === "localhost";
-const isStaticDevPort = ["3000", "5500", "8080", "4000", "8000"].includes(window.location.port);
+const isStaticDevPort = ["5500", "5501", "8080", "4000", "8000"].includes(window.location.port);
 const isLiveServerPreview = isStaticDevHost && isStaticDevPort;
+const isNetlifyHost =
+  window.location.hostname.endsWith(".netlify.app") ||
+  window.location.hostname.endsWith(".netlify.live");
 const leadApiUrl =
   window.location.protocol === "file:" || isLiveServerPreview
-    ? "http://localhost:3001/api/leads"
-    : "/api/leads";
+    ? "http://localhost:3000/api/leads"
+    : isNetlifyHost
+      ? "/.netlify/functions/leads"
+      : "/api/leads";
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 ).matches;

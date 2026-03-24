@@ -1,4 +1,8 @@
-// Standalone Vercel serverless function - tashqi require yo'q
+
+
+
+
+
 
 function getTelegramChatIds(value) {
   return String(value || "")
