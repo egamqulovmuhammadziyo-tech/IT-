@@ -5,6 +5,7 @@
   "description": "Static marketing site with Telegram lead backend",
   "main": "server.js",
   "scripts": {
+    "build": "node -e \"console.log('Netlify build ready')\"",
     "start": "node server.js",
     "dev": "node --watch server.js",
     "check": "node --check server.js && node --check lead-service.js && node --check api/leads.js"
