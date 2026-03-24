@@ -1,0 +1,41 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/courses", "destination": "/courses.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/roadmap", "destination": "/roadmap.html" },
+    { "source": "/career", "destination": "/career.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/kurslar/python", "destination": "/kurslar/python.html" },
+    { "source": "/kurslar/ingliz-tili", "destination": "/kurslar/ingliz-tili.html" },
+    { "source": "/kurslar/web-dasturlash", "destination": "/kurslar/web-dasturlash.html" },
+    { "source": "/kurslar/grafik-dizayn", "destination": "/kurslar/grafik-dizayn.html" },
+    { "source": "/kurslar/suniy-intellekt", "destination": "/kurslar/suniy-intellekt.html" },
+    { "source": "/kurslar/biznes-kursi", "destination": "/kurslar/biznes-kursi.html" },
+    { "source": "/kurslar/rus-tili", "destination": "/kurslar/rus-tili.html" },
+    { "source": "/kurslar/koreys-tili", "destination": "/kurslar/koreys-tili.html" }
+  ],
+  "headers": [
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "text/css; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000" }
+      ]
+    }
+  ]
+}

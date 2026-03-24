@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Aloqa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Bosh sahifa</a></li>
+        <li><a href="./courses.html">Kurslar</a></li>
+        <li><a href="./roadmap.html">Roadmap</a></li>
+        <li><a href="./career.html">Karyera</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html" class="active">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="./index.html#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html">Bosh sahifa</a>
+      <a href="./courses.html">Kurslar</a>
+      <a href="./roadmap.html">Roadmap</a>
+      <a href="./career.html">Karyera</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html" class="active">Aloqa</a>
+    </div>
+
+    <!-- CTA -->
+    <section id="cta">
+      <h2 class="cta-title reveal">
+        BUGUN<br /><span class="accent">BOSHLANG</span>
+      </h2>
+      <p class="cta-sub reveal reveal-delay-1">
+        Birinchi dars bepul. Ota-onangiz bilan keling. Ko'ring. Qaror - sizda.
+      </p>
+      <div class="cta-btns reveal reveal-delay-2">
+        <a href="./index.html#contact-info" class="btn-primary"
+          ><i class="fas fa-phone"></i> Qo'ng'iroq qilish</a
+        >
+        <a href="https://t.me/ITCBeshariq_admin" class="btn-ghost"
+          ><i class="fab fa-telegram-plane"></i> Telegramda yozish</a
+        >
+      </div>
+    </section>
+
+    <a
+      href="#leadForm"
+      class="contact-scroll-cue"
+      aria-label="Ro'yxatdan o'tish formasiga o'tish"
+    >
+      <span class="contact-scroll-cue-text">Ro'yxatdan o'tish pastda</span>
+      <span class="contact-scroll-cue-icon"
+        ><i class="fas fa-angle-down"></i
+      ></span>
+    </a>
+
+    <section class="lead-section">
+      <div class="lead-shell">
+        <div class="lead-copy reveal">
+          <div class="section-tag">IT Center Bot</div>
+          <h2 class="section-title">BIZGA YOZING</h2>
+          <p class="section-sub">
+            Formani to'ldiring. So'rov to'g'ridan-to'g'ri IT Center bot orqali
+            admin'ga yuboriladi.
+          </p>
+          <div class="lead-points">
+            <div class="lead-point">
+              <strong>Tezkor aloqa</strong>
+              <span>Lead botga tushadi va admin darhol ko'radi.</span>
+            </div>
+            <div class="lead-point">
+              <strong>Kursni oldindan tanlash</strong>
+              <span>Kim qaysi yo'nalishga qiziqqani bir zumda bilinadi.</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="lead-form reveal reveal-delay-1" id="leadForm">
+          <input type="hidden" name="source" value="contact-page" />
+          <div class="lead-selected-course" id="selectedCourseBanner" hidden>
+            Tanlangan kurs: <span id="selectedCourseText"></span>
+          </div>
+          <label class="lead-field">
+            <span>Ismingiz</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Masalan: Ali Valiyev"
+              required
+            />
+          </label>
+
+          <label class="lead-field">
+            <span>Telefon raqamingiz</span>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+998 90 123 45 67"
+              required
+            />
+          </label>
+
+          <label class="lead-field">
+            <span>Manzil</span>
+            <input
+              type="text"
+              name="address"
+              placeholder="Masalan: Beshariq, Farg'ona"
+            />
+          </label>
+
+          <label class="lead-field" id="courseFieldGroup">
+            <span>Qaysi kurs qiziqtiryapti?</span>
+            <select name="course" required>
+              <option value="">Kursni tanlang</option>
+              <option value="Python">Python</option>
+              <option value="Ingliz Tili">Ingliz Tili</option>
+              <option value="Web Dasturlash">Web Dasturlash</option>
+              <option value="Grafik Dizayn">Grafik Dizayn</option>
+              <option value="Sun'iy Intellekt">Sun'iy Intellekt</option>
+              <option value="Biznes Kursi">Biznes Kursi</option>
+              <option value="Rus Tili">Rus Tili</option>
+              <option value="Koreys Tili">Koreys Tili</option>
+            </select>
+          </label>
+
+          <label class="lead-field lead-field-full">
+            <span>Qo'shimcha izoh</span>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Qaysi vaqt qulay, qanday savolingiz bor, yozib qoldiring."
+            ></textarea>
+          </label>
+
+          <div class="lead-actions">
+            <button type="submit" class="btn-primary lead-submit">
+              IT Center botga yuborish
+            </button>
+            <p
+              class="lead-status"
+              id="leadStatus"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT BAR -->
+    <div class="contact-bar">
+      <div class="cb-label">BESHARIQ IT CENTER</div>
+      <div class="contact-items">
+        <a
+          class="contact-item"
+          href="#"
+          data-copy-text="+998947704100"
+          data-copy-label="Telefon raqami nusxalandi"
+          ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+        >
+        <a class="contact-item" href="https://t.me/ITCBeshariq_admin"
+          ><i class="fab fa-telegram-plane"></i> @ITCBeshariq_admin</a
+        >
+        <a class="contact-item" href="https://maps.app.goo.gl/s493AimhDwqBccx89"
+          ><i class="fas fa-map-marker-alt"></i>Beshariq tuman, pochta binosi,
+          2-qavat</a
+        >
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/logo.png" alt="" width="72" height="72" />
+          </div>
+          <div class="footer-copy">
+            <h3>Beshariq IT Center</h3>
+            <p>
+              IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy
+              o'quv markazi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <a
+            class="footer-chip"
+            href="#"
+            data-copy-text="+998947704100"
+            data-copy-label="Telefon raqami nusxalandi"
+            ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+          >
+          <a class="footer-chip" href="https://t.me/ITCBeshariq_admin"
+            ><i class="fab fa-telegram-plane"></i> Telegram</a
+          >
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

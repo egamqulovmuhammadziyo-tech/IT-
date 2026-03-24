@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Koreys Tili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="" width="80" height="80" /></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Bosh sahifa</a></li>
+        <li><a href="../courses.html" class="active">Kurslar</a></li>
+        <li><a href="../roadmap.html">Roadmap</a></li>
+        <li><a href="../career.html">Karyera</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Rang rejimini almashtirish" aria-pressed="false" title="Rang rejimini almashtirish"><i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i></button>
+        <a href="../index.html#contact-info" class="nav-cta">Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="../index.html">Bosh sahifa</a>
+      <a href="../courses.html" class="active">Kurslar</a>
+      <a href="../roadmap.html">Roadmap</a>
+      <a href="../career.html">Karyera</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../contact.html">Aloqa</a>
+    </div>
+    <section class="course-page">
+      <div class="course-detail-hero">
+        <article class="course-detail-main reveal">
+          <a class="course-breadcrumb" href="../courses.html"><i class="fas fa-arrow-left"></i> Barcha kurslarga qaytish</a>
+          <div class="course-detail-header">
+            <div>
+              <div class="section-tag">Til yo'nalishi</div>
+              <h1 class="section-title">KOREYS TILI</h1>
+              <p class="course-lead">Koreys tili kursi Hangul'dan boshlanib, TOPIK va kundalik suhbatgacha olib chiqadi. Bu yo'nalish sizga <strong>til bilan birga yangi imkoniyatlar dunyosini</strong> ham ochadi.</p>
+            </div>
+            <div class="course-detail-icon"><i class="fas fa-language"></i></div>
+          </div>
+          <div class="course-detail-meta">
+            <div class="course-detail-pill">6–18 oy</div>
+            <div class="course-detail-pill">A0 dan B1+</div>
+            <div class="course-detail-pill">TOPIK va muloqot</div>
+          </div>
+          <div class="course-detail-grid">
+            <div class="course-detail-card"><h3>Qanday boshlanadi?</h3><p>Hangul alifbosi, talaffuz va kundalik iboralardan boshlanadi. Tizimli o'rgatilgani uchun yangi yozuv ham tezroq o'zlashadi.</p></div>
+            <div class="course-detail-card"><h3>Kimlar uchun?</h3><p>Koreyada o'qish yoki ishlashni maqsad qilganlar, TOPIK tayyorlanayotganlar va yangi tilga jiddiy qiziqqanlar uchun.</p></div>
+            <div class="course-detail-card"><h3>Nega qiziqarli?</h3><p>Koreys tilini o'rganish bilan siz nafaqat til, balki butun bir yangi madaniyatga kirib borasiz.</p></div>
+            <div class="course-detail-card"><h3>Natija</h3><p>Kurs davomida matnni o'qish, oddiy gapirish va keyingi yuqori daraja uchun poydevor qurish boshlanadi.</p></div>
+          </div>
+        </article>
+        <aside class="course-detail-side reveal reveal-delay-1">
+          <div class="course-side-stat"><strong>Maqsadli yo'nalish</strong><span>TOPIK, universitet, stipendiya yoki ish rejalariga mos tayyorlov beriladi.</span></div>
+          <div class="course-side-stat"><strong>Motivatsiya</strong><span>Yangi yozuv tizimini egallashning o'zi o'ziga katta ishonch beradi.</span></div>
+          <div class="course-side-stat"><strong>Istiqbol</strong><span>Koreys tili hali ham kuchli va kelajagi bor yo'nalishlardan biri.</span></div>
+          <p class="course-side-note">Bir kun kelib koreyscha matnni bemalol o'qib turganingizni sezsangiz, bu yo'l qanchalik to'g'ri bo'lganini his qilasiz.</p>
+          <a class="btn-primary course-enroll-btn" href="../contact.html" data-course-name="Koreys Tili" data-course-lock="true">Ro'yxatdan o'tish</a>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main"><div class="footer-brand"><div class="footer-logo"><img src="../assets/logo.png" alt="" width="72" height="72" /></div><div class="footer-copy"><h3>Beshariq IT Center</h3><p>IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy o'quv markazi.</p></div></div></div>
+      <div class="footer-bottom"><div class="footer-meta"><a class="footer-chip" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"><i class="fas fa-phone"></i> +998 94 770 41-00</a><a class="footer-chip" href="https://t.me/ITCBeshariq_admin"><i class="fab fa-telegram-plane"></i> Telegram</a></div><p>&copy; 2025 Beshariq IT Center · Barcha huquqlar himoyalangan</p></div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

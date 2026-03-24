@@ -1,0 +1,345 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Bosh sahifa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Bosh sahifa</a></li>
+        <li><a href="./courses.html">Kurslar</a></li>
+        <li><a href="./roadmap.html">Roadmap</a></li>
+        <li><a href="./career.html">Karyera</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html" class="active">Bosh sahifa</a>
+      <a href="./courses.html">Kurslar</a>
+      <a href="./roadmap.html">Roadmap</a>
+      <a href="./career.html">Karyera</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Aloqa</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-badge"><span>Tuman #1 IT & Tillar Markazi</span></div>
+
+      <h1 class="hero-title reveal">
+        BILIM -<br />
+        <span class="accent">KELAJAK</span><br />
+        <span class="outline">UCHUN</span>
+      </h1>
+
+      <p class="hero-sub reveal reveal-delay-1">
+        IT, dasturlash, dizayn va xorijiy tillar - <strong>8 ta kurs</strong>,
+        <strong>haftalik roadmap</strong>, birinchi kuningizdan
+        <strong>real natija</strong>.
+      </p>
+
+      <div class="hero-btns reveal reveal-delay-2">
+        <a href="./courses.html" class="btn-primary">Kurslarni ko'rish &rsaquo;</a>
+        <a href="./contact.html" class="btn-ghost">Bepul sinov darsi</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div id="stats">
+      <div class="stats-bar">
+        <div class="stat-item reveal">
+          <span class="stat-num">70+</span
+          ><span class="stat-lbl">Faol o'quvchi</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-num">1700+</span
+          ><span class="stat-lbl">Bitiruvchi</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-num">8</span
+          ><span class="stat-lbl">Kurs yo'nalishi</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-num">6</span
+          ><span class="stat-lbl">Yillik tajriba</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY -->
+    <section id="why">
+      <div class="section-tag">Nima uchun biz</div>
+      <h2 class="section-title reveal">FARQIMIZ</h2>
+      <p class="section-sub reveal reveal-delay-1">
+        Ko'plab o'quv markazlar sertifikat beradi. Biz natija beramiz.
+      </p>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-num">01</div>
+          <span class="why-icon"><i class="fas fa-mobile-alt"></i></span>
+          <div class="why-title">Telefondan boshlanadi</div>
+          <div class="why-desc">
+            Kompyuter birinchi kunda shart emas. Python, Dizayn, AI - barchasi
+            telefondan boshlanadi. Kompyuter kerak bo'lganda markaz kompyuteri
+            bor.
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-num">02</div>
+          <span class="why-icon"><i class="fas fa-map"></i></span>
+          <div class="why-title">Haftalik roadmap</div>
+          <div class="why-desc">
+            Har hafta nima o'rganiladi - oldindan ma'lum. Ota-onasi ham ko'radi.
+            Har modul oxirida aniq natija: "shu narsani qila olasiz."
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-num">03</div>
+          <span class="why-icon"><i class="fas fa-dollar-sign"></i></span>
+          <div class="why-title">Birinchi oydan natija</div>
+          <div class="why-desc">
+            Dizaynda: birinchi flayer. Pythonda: birinchi bot. AI da: AI bilan
+            rezyume. Biz sertifikat emas, portfolioga e'tibor beramiz.
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-num">04</div>
+          <span class="why-icon"><i class="fas fa-handshake"></i></span>
+          <div class="why-title">Ota-ona bilan birga</div>
+          <div class="why-desc">
+            Oyiga 1-2 marta ota-ona bilan suhbat. Farzandingizning o'sishini
+            raqamda ko'rasiz. Bizda hech narsa yashirin emas.
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-num">05</div>
+          <span class="why-icon"><i class="fas fa-trophy"></i></span>
+          <div class="why-title">Ish topishga yordam</div>
+          <div class="why-desc">
+            Portfolio, GitHub/Behance, Upwork profil - kurs ichida tayyorlanadi.
+            Mahalliy kompaniyalar bilan aloqamiz bor.
+          </div>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-num">06</div>
+          <span class="why-icon"><i class="fas fa-gift"></i></span>
+          <div class="why-title">Bepul sinov darsi</div>
+          <div class="why-desc">
+            Birinchi 3ta dars bepul va majburiyatsiz. Ota-ona bilan kelasiz,
+            ko'rasiz. Yoqmasa ketasiz - hech qanday bosim yo'q.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories">
+      <div class="section-tag">Muvaffaqiyat Hikoyalari</div>
+      <h2 class="section-title reveal">BITIRUVCHILAR</h2>
+      <p class="section-sub reveal reveal-delay-1">
+        Haqiqiy natijalar - haqiqiy o'quvchilar.
+      </p>
+
+      <div class="stories-grid">
+        <div class="story-card reveal">
+          <span class="story-quote">"</span>
+          <p class="story-text">
+            Kompyuterim yo'q edi, ingliz tilim A0 edi. Faqat telefon bor edi. 3
+            oyda Telegram bot yasadim. 6 oyda Upwork ga kirdim. Birinchi
+            buyurtma shu kuni kechasi keldi.
+          </p>
+          <span class="story-result">$600/oy</span>
+          <div class="story-name">Muhammadziyo Egamqulov</div>
+          <div class="story-meta">Python kursi - 17 yoshda - IT center</div>
+        </div>
+        <div class="story-card reveal reveal-delay-1">
+          <span class="story-quote">"</span>
+          <p class="story-text">
+            IELTS va Koreys tilini bir vaqtda o'qidim. Qiyin edi. Lekin jadval
+            shunday tuzilgan ediki - inglizcha o'rganilgan narsalar koreys
+            tilini ham qo'llab-quvvatladi.
+          </p>
+          <span class="story-result">Koreya Univ.</span>
+          <div class="story-name">Kamronbek Qosimov</div>
+          <div class="story-meta">
+            Ingliz tili + Koreys - GKS stipendiyasi - IT center
+          </div>
+        </div>
+        <div class="story-card reveal reveal-delay-2">
+          <span class="story-quote">"</span>
+          <p class="story-text">
+            G'oyam bor edi - qayerdan boshlashni bilmasdim. Biznes kursida 9
+            modul o'tdim. Demo kunda loyihamni taqdim etdim. 3 ta investor bilan
+            uchrashuvga chaqirishdi.
+          </p>
+          <span class="story-result">IT Park</span>
+          <div class="story-name">Kamronbek Hoshimov</div>
+          <div class="story-meta">
+            Biznes kursi - asoschi Beshariq hokimyati
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <h2 class="cta-title reveal">
+        BUGUN<br /><span class="accent">BOSHLANG</span>
+      </h2>
+      <p class="cta-sub reveal reveal-delay-1">
+        Birinchi 3ta dars bepul. Ota-onangiz bilan keling. Ko'ring. Qaror -
+        sizda.
+      </p>
+      <div class="cta-btns reveal reveal-delay-2">
+        <a href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi" class="btn-primary"
+          ><i class="fas fa-phone"></i> Qo'ng'iroq qilish</a
+        >
+        <a href="https://t.me/ITCBeshariq_admin" class="btn-ghost"
+          ><i class="fab fa-telegram-plane"></i> Telegramda yozish</a
+        >
+      </div>
+    </section>
+
+    <!-- CONTACT BAR -->
+    <div class="contact-bar" id="contact-info">
+      <div class="cb-label">BESHARIQ IT CENTER</div>
+      <div class="contact-items">
+        <a class="contact-item" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"
+          ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+        >
+        <a class="contact-item" href="https://t.me/ITCBeshariq_admin"
+          ><i class="fab fa-telegram-plane"></i> @ITCBeshariq_admin</a
+        >
+        <a class="contact-item" href="https://maps.app.goo.gl/s493AimhDwqBccx89"
+          ><i class="fas fa-map-marker-alt"></i>Beshariq tuman, pochta binosi,
+          2-qavat</a
+        >
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-home">
+      <div class="footer-home-top">
+        <div class="footer-home-brand">
+          <div class="footer-logo footer-home-logo">
+            <img src="./assets/logo.png" alt="" width="84" height="84" />
+          </div>
+          <div class="footer-home-copy">
+            <span class="footer-home-tag">Beshariq IT Center</span>
+            <h3>Kelajak kasblari shu yerda boshlanadi</h3>
+            <p>
+              O'quvchi birinchi kundan amaliy natija ko'radigan, ota-ona esa
+              jarayonni aniq tushunadigan zamonaviy markaz.
+            </p>
+          </div>
+        </div>
+        <div class="footer-home-points">
+          <div class="footer-point">
+            <span class="footer-point-num">01</span>
+            <span class="footer-point-text"
+              >Telefon bilan ham boshlasa bo'ladi</span
+            >
+          </div>
+          <div class="footer-point">
+            <span class="footer-point-num">02</span>
+            <span class="footer-point-text">Har kursda aniq roadmap bor</span>
+          </div>
+          <div class="footer-point">
+            <span class="footer-point-num">03</span>
+            <span class="footer-point-text"
+              >Portfolio va ish topish yo'nalishi bor</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-home-grid">
+        <a
+          class="footer-home-card"
+          href="#"
+          data-copy-text="+998947704100"
+          data-copy-label="Telefon raqami nusxalandi"
+        >
+          <span class="footer-home-card-icon"
+            ><i class="fas fa-phone"></i
+          ></span>
+          <span class="footer-home-card-label">Telefon</span>
+          <strong>+998 94 770 41-00</strong>
+        </a>
+        <a class="footer-home-card" href="https://t.me/ITCBeshariq_admin">
+          <span class="footer-home-card-icon"
+            ><i class="fab fa-telegram-plane"></i
+          ></span>
+          <span class="footer-home-card-label">Telegram</span>
+          <strong>@ITCBeshariq_admin</strong>
+        </a>
+        <a
+          class="footer-home-card"
+          href="https://maps.app.goo.gl/s493AimhDwqBccx89"
+        >
+          <span class="footer-home-card-icon"
+            ><i class="fas fa-map-marker-alt"></i
+          ></span>
+          <span class="footer-home-card-label">Manzil</span>
+          <strong>Beshariq tuman, pochta binosi, 2-qavat</strong>
+        </a>
+      </div>
+      <div class="footer-bottom footer-home-bottom">
+        <div class="footer-meta">
+          <span class="footer-chip">Dushanba - Shanba</span>
+          <span class="footer-chip">Offline darslar</span>
+          <span class="footer-chip">Bepul sinov darsi</span>
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

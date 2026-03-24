@@ -1,0 +1,386 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Kurslar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Bosh sahifa</a></li>
+        <li><a href="./courses.html" class="active">Kurslar</a></li>
+        <li><a href="./roadmap.html">Roadmap</a></li>
+        <li><a href="./career.html">Karyera</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="./index.html#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html">Bosh sahifa</a>
+      <a href="./courses.html" class="active">Kurslar</a>
+      <a href="./roadmap.html">Roadmap</a>
+      <a href="./career.html">Karyera</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Aloqa</a>
+    </div>
+
+<!-- COURSES -->
+    <section id="courses">
+      <div class="section-tag">Yo'nalishlar</div>
+      <h2 class="section-title reveal">KURSLAR</h2>
+      <p class="section-sub reveal reveal-delay-1">
+        Kompyuter bilmasangiz ham, ingliz tilingiz A0 bo'lsa ham - barchasi
+        telefondan boshlanadi.
+      </p>
+
+      <div class="courses-grid">
+        <a
+          class="course-card course-link reveal"
+          href="./kurslar/ingliz-tili.html"
+          data-course-name="Ingliz Tili"
+          data-course-lock="true"
+          style="--card-accent: rgba(14, 116, 144, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-globe"></i></span>
+          <div class="course-accent" style="background: #0e7490"></div>
+          <div class="course-name">Ingliz Tili</div>
+          <div class="course-dur">3-18 oy - A0 - C1+</div>
+          <div class="course-desc">
+            IELTS, xorijga chiqish, IT uchun - birinchi darsdan kommunikatsiya.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #0e7490; border-color: rgba(14, 116, 144, 0.4)"
+              >IELTS</span
+            >
+            <span
+              class="course-tag"
+              style="color: #0e7490; border-color: rgba(14, 116, 144, 0.4)"
+              >Speaking</span
+            >
+            <span
+              class="course-tag"
+              style="color: #0e7490; border-color: rgba(14, 116, 144, 0.4)"
+              >Business Eng</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-1"
+          href="./kurslar/python.html"
+          data-course-name="Python"
+          data-course-lock="true"
+          style="--card-accent: rgba(22, 101, 52, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fab fa-python"></i></span>
+          <div class="course-accent" style="background: #166534"></div>
+          <div class="course-name">Python</div>
+          <div class="course-dur">4-6 oy - Asosiy</div>
+          <div class="course-desc">
+            Telegram bot, avtomatlashtirish, data - 3 oyda birinchi real loyiha.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #166534; border-color: rgba(22, 101, 52, 0.4)"
+              >Bot</span
+            >
+            <span
+              class="course-tag"
+              style="color: #166534; border-color: rgba(22, 101, 52, 0.4)"
+              >Data</span
+            >
+            <span
+              class="course-tag"
+              style="color: #166534; border-color: rgba(22, 101, 52, 0.4)"
+              >Freelance</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-2"
+          href="./kurslar/web-dasturlash.html"
+          data-course-name="Web Dasturlash"
+          data-course-lock="true"
+          style="--card-accent: rgba(29, 78, 216, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-code"></i></span>
+          <div class="course-accent" style="background: #1d4ed8"></div>
+          <div class="course-name">Web Dasturlash</div>
+          <div class="course-dur">5-8 oy - Asosiy</div>
+          <div class="course-desc">
+            HTML - CSS - JavaScript - React. 2 oyda birinchi sayt, 6 oyda pul.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #1d4ed8; border-color: rgba(29, 78, 216, 0.4)"
+              >Frontend</span 
+            >
+            <span
+              class="course-tag"
+              style="color: #1d4ed8; border-color: rgba(29, 78, 216, 0.4)"
+              >React</span
+            >
+            <span
+              class="course-tag"
+              style="color: #1d4ed8; border-color: rgba(29, 78, 216, 0.4)"
+              >Deploy</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-3"
+          href="./kurslar/grafik-dizayn.html"
+          data-course-name="Grafik Dizayn"
+          data-course-lock="true"
+          style="--card-accent: rgba(91, 33, 182, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-palette"></i></span>
+          <div class="course-accent" style="background: #5b21b6"></div>
+          <div class="course-name">Grafik Dizayn</div>
+          <div class="course-dur">3-5 oy - Asosiy</div>
+          <div class="course-desc">
+            Canva, Figma, logo, SMM. Birinchi buyurtma birinchi oyda mumkin.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #5b21b6; border-color: rgba(91, 33, 182, 0.4)"
+              >Figma</span
+            >
+            <span
+              class="course-tag"
+              style="color: #5b21b6; border-color: rgba(91, 33, 182, 0.4)"
+              >Logo</span
+            >
+            <span
+              class="course-tag"
+              style="color: #5b21b6; border-color: rgba(91, 33, 182, 0.4)"
+              >SMM</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal"
+          href="./kurslar/suniy-intellekt.html"
+          data-course-name="Sun'iy Intellekt"
+          data-course-lock="true"
+          style="--card-accent: rgba(180, 83, 9, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-robot"></i></span>
+          <div class="course-accent" style="background: #b45309"></div>
+          <div class="course-name">Sun'iy Intellekt</div>
+          <div class="course-dur">2-3 oy - Asosiy</div>
+          <div class="course-desc">
+            ChatGPT, Midjourney, n8n - kasbingizga AI qo'shish.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #b45309; border-color: rgba(180, 83, 9, 0.4)"
+              >Prompt</span
+            >
+            <span
+              class="course-tag"
+              style="color: #b45309; border-color: rgba(180, 83, 9, 0.4)"
+              >Midjourney</span
+            >
+            <span
+              class="course-tag"
+              style="color: #b45309; border-color: rgba(180, 83, 9, 0.4)"
+              >n8n</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-1"
+          href="./kurslar/biznes-kursi.html"
+          data-course-name="Biznes Kursi"
+          data-course-lock="true"
+          style="--card-accent: rgba(153, 27, 27, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-briefcase"></i></span>
+          <div class="course-accent" style="background: #991b1b"></div>
+          <div class="course-name">Biznes Kursi</div>
+          <div class="course-dur">4 oy - 9 Modul</div>
+          <div class="course-desc">
+            G'oyadan investorgacha. Marketing, moliya, pitch, startap.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #991b1b; border-color: rgba(153, 27, 27, 0.4)"
+              >Marketing</span
+            >
+            <span
+              class="course-tag"
+              style="color: #991b1b; border-color: rgba(153, 27, 27, 0.4)"
+              >Pitch</span
+            >
+            <span
+              class="course-tag"
+              style="color: #991b1b; border-color: rgba(153, 27, 27, 0.4)"
+              >Startup</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-2"
+          href="./kurslar/rus-tili.html"
+          data-course-name="Rus Tili"
+          data-course-lock="true"
+          style="--card-accent: rgba(194, 65, 12, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-language"></i></span>
+          <div class="course-accent" style="background: #c2410c"></div>
+          <div class="course-name">Rus Tili</div>
+          <div class="course-dur">3-12 oy - A0 - B2</div>
+          <div class="course-desc">
+            Ish topish, muloqot, hujjatlar. Kirill alifbosidan boshlang.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #c2410c; border-color: rgba(194, 65, 12, 0.4)"
+              >Kirill</span
+            >
+            <span
+              class="course-tag"
+              style="color: #c2410c; border-color: rgba(194, 65, 12, 0.4)"
+              >Muloqot</span
+            >
+            <span
+              class="course-tag"
+              style="color: #c2410c; border-color: rgba(194, 65, 12, 0.4)"
+              >TORFL</span
+            >
+          </div>
+        </a>
+
+        <a
+          class="course-card course-link reveal reveal-delay-3"
+          href="./kurslar/koreys-tili.html"
+          data-course-name="Koreys Tili"
+          data-course-lock="true"
+          style="--card-accent: rgba(157, 23, 77, 0.12)"
+        >
+          <div class="course-arrow">&rsaquo;</div>
+          <span class="course-icon"><i class="fas fa-language"></i></span>
+          <div class="course-accent" style="background: #9d174d"></div>
+          <div class="course-name">Koreys Tili</div>
+          <div class="course-dur">6-18 oy - A0 - B1+</div>
+          <div class="course-desc">
+            TOPIK, Koreya universiteti, stipendiya. Hangul dan boshlang.
+          </div>
+          <div class="course-tags">
+            <span
+              class="course-tag"
+              style="color: #9d174d; border-color: rgba(157, 23, 77, 0.4)"
+              >TOPIK</span
+            >
+            <span
+              class="course-tag"
+              style="color: #9d174d; border-color: rgba(157, 23, 77, 0.4)"
+              >Stipendiya</span
+            >
+            <span
+              class="course-tag"
+              style="color: #9d174d; border-color: rgba(157, 23, 77, 0.4)"
+              >K-Culture</span
+            >
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/logo.png" alt="" width="72" height="72" />
+          </div>
+          <div class="footer-copy">
+            <h3>Beshariq IT Center</h3>
+            <p>
+              IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy
+              o'quv markazi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <a class="footer-chip" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"
+            ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+          >
+          <a class="footer-chip" href="https://t.me/ITCBeshariq_admin"
+            ><i class="fab fa-telegram-plane"></i> Telegram</a
+          >
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

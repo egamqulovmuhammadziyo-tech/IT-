@@ -1,0 +1,954 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Bosh sahifa</a></li>
+        <li><a href="./courses.html">Kurslar</a></li>
+        <li><a href="./roadmap.html" class="active">Roadmap</a></li>
+        <li><a href="./career.html">Karyera</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="./index.html#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html">Bosh sahifa</a>
+      <a href="./courses.html">Kurslar</a>
+      <a href="./roadmap.html" class="active">Roadmap</a>
+      <a href="./career.html">Karyera</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Aloqa</a>
+    </div>
+
+<!-- ROADMAP -->
+    <section id="roadmap">
+      <div class="section-tag">Yo'l Xaritasi</div>
+      <h2 class="section-title reveal">ROADMAP</h2>
+      <p class="section-sub reveal reveal-delay-1">
+        Har kurs uchun haftalik reja - nima o'rganiladi, modul oxirida qanday
+        natija.
+      </p>
+
+      <div class="roadmap-tabs" id="rmTabs" role="tablist" aria-label="Roadmap kurslari">
+        <button
+          type="button"
+          class="rtab active"
+          data-roadmap-tab="python"
+          role="tab"
+          aria-selected="true"
+          aria-controls="rm-python"
+        >
+          <i class="fab fa-python"></i> Python
+        </button>
+        <button
+          type="button"
+          class="rtab"
+          data-roadmap-tab="english"
+          role="tab"
+          aria-selected="false"
+          aria-controls="rm-english"
+        >
+          <i class="fas fa-globe"></i> Ingliz Tili
+        </button>
+        <button
+          type="button"
+          class="rtab"
+          data-roadmap-tab="web"
+          role="tab"
+          aria-selected="false"
+          aria-controls="rm-web"
+        >
+          <i class="fas fa-code"></i> Web
+        </button>
+        <button
+          type="button"
+          class="rtab"
+          data-roadmap-tab="design"
+          role="tab"
+          aria-selected="false"
+          aria-controls="rm-design"
+        >
+          <i class="fas fa-palette"></i> Dizayn
+        </button>
+        <button
+          type="button"
+          class="rtab"
+          data-roadmap-tab="ai"
+          role="tab"
+          aria-selected="false"
+          aria-controls="rm-ai"
+        >
+          <i class="fas fa-robot"></i> AI
+        </button>
+        <button
+          type="button"
+          class="rtab"
+          data-roadmap-tab="biznes"
+          role="tab"
+          aria-selected="false"
+          aria-controls="rm-biznes"
+        >
+          <i class="fas fa-briefcase"></i> Biznes
+        </button>
+      </div>
+
+      <div id="rm-python" class="roadmap-content active roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #166534">01</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Python Asoslari</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> Kalkulyator va oddiy dastur
+                yozasiz
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">1-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Python va PyCharm o'rnatish - yoki Replit (browser)
+                </div>
+                <div class="rm-item">
+                  print(), input() - ekranga yozuv va foydalanuvchidan olish
+                </div>
+                <div class="rm-item">
+                  Telefonda: Pydroid3 bilan ham ishlash mumkin
+                </div>
+                <div class="rm-item">
+                  Birinchi dastur: ism bilan salomlashuvchi sodda kod
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">2-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  int, float, str, bool - 4 ta asosiy tur, type()
+                </div>
+                <div class="rm-item">
+                  Matematik amallar: +, -, *, /, //, %, **
+                </div>
+                <div class="rm-item">
+                  O'zgaruvchilar: nomlash qoidalari, snake_case
+                </div>
+                <div class="rm-item">Amaliy loyiha: oddiy kalkulyator</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">3-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  if / elif / else - qaror qabul qilish mantiqasi
+                </div>
+                <div class="rm-item">
+                  for tsikl: range(), ro'yxat ustida aylana
+                </div>
+                <div class="rm-item">
+                  while tsikl: shart bajarilguncha takrorlanish
+                </div>
+                <div class="rm-item">
+                  Amaliy: 1 dan 100 gacha juft sonlarni chiqarish
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">4-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  def funksiya() - o'z funksiyangizni yozish
+                </div>
+                <div class="rm-item">
+                  Ro'yxat (list): append, remove, sort, len
+                </div>
+                <div class="rm-item">Dictionary: kalit-qiymat juftlari</div>
+                <div class="rm-item">
+                  Yakuniy loyiha: maktab baholarini hisoblash dasturi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #166534">02</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Amaliy Python - Fayllar va Bot</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> Ishlovchi Telegram bot yasaysiz
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">5-6-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Faylni o'qish va yozish: open(), read(), write()
+                </div>
+                <div class="rm-item">
+                  JSON bilan ishlash: json.loads(), json.dumps()
+                </div>
+                <div class="rm-item">
+                  Standart kutubxona: os, datetime, random
+                </div>
+                <div class="rm-item">
+                  Loyiha: kontaktlar daftari (faylga saqlanadi)
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">7-8-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  python-telegram-bot kutubxonasi - o'rnatish
+                </div>
+                <div class="rm-item">
+                  BotFather: token olish, bot ro'yxatdan o'tish
+                </div>
+                <div class="rm-item">
+                  Komandalar: /start, /help, custom buyruqlar
+                </div>
+                <div class="rm-item">
+                  Oddiy bot - Echo bot - foydalanuvchi ma'lumoti
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">9-10-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  requests kutubxonasi: GET, POST so'rovlar
+                </div>
+                <div class="rm-item">
+                  JSON API: ob-havo, valyuta kursi olish
+                </div>
+                <div class="rm-item">
+                  BeautifulSoup: saytdan ma'lumot yig'ish
+                </div>
+                <div class="rm-item">
+                  Yakuniy loyiha: kunlik valyuta kursini yuboradigan bot
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #166534">03</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Data va GitHub Portfolio</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> GitHub da 3 ta real loyiha
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">11-12-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  pandas: DataFrame, read_csv, groupby, merge
+                </div>
+                <div class="rm-item">
+                  matplotlib: grafik, ustunli diagramma, pie chart
+                </div>
+                <div class="rm-item">
+                  Amaliy: Excel fayldan maktab natijalari tahlili
+                </div>
+                <div class="rm-item">
+                  Vizualizatsiya: top-10 o'quvchi grafigi
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">13-14-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Git: init, add, commit, push - asosiy komandalar
+                </div>
+                <div class="rm-item">
+                  GitHub profil: README.md, pin repositories, bio
+                </div>
+                <div class="rm-item">
+                  Loyihani internet ga chiqarish: GitHub Pages
+                </div>
+                <div class="rm-item">
+                  Portfolio: 3 loyiha, har biri README bilan
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #166534">04</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Freelance va Ish Topish</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> Birinchi buyurtma yoki ish
+                intervyusi
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">15-16-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Upwork profil: bio, portfolio, hourly rate belgilash
+                </div>
+                <div class="rm-item">
+                  Fiverr gig: Python bot, skript, avtomatlashtirish
+                </div>
+                <div class="rm-item">
+                  Birinchi proposal yozish - ingliz tilida shablon
+                </div>
+                <div class="rm-item">
+                  Amaliy: 5 ta proposal yuboring, natijalarni tahlil
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">17-18-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  OOP: class, object, inheritance - asoslar
+                </div>
+                <div class="rm-item">
+                  Unit testing: unittest moduli bilan tekshirish
+                </div>
+                <div class="rm-item">Clean code: nomlash, sharh, struktura</div>
+                <div class="rm-item">
+                  Mock intervyu: 10 ta klassik Python savol va javob
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rm-english" class="roadmap-content roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #0e7490">01</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Asos - Birinchi so'zlar va talaffuz</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> O'zingizni inglizcha
+                tanishtirasiz
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">1-2-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Ingliz alifbosi 26 harf - talaffuz qoidalari
+                </div>
+                <div class="rm-item">Sifatlar: katta, kichik, rangli, son</div>
+                <div class="rm-item">
+                  Salomlashish: Hello, Hi, Good morning, Bye
+                </div>
+                <div class="rm-item">
+                  Listening: BBC Learning English Level 1
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">3-4-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">Raqamlar 1-1000 og'zaki va yozma</div>
+                <div class="rm-item">
+                  Soat: What time is it? 12 va 24 soatlik
+                </div>
+                <div class="rm-item">Kunlar, oylar, fasllar lug'ati</div>
+                <div class="rm-item">Mashq: kun tartibini inglizcha yozish</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">5-6-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">To be: I am, You are, He/She is</div>
+                <div class="rm-item">
+                  Kasblar, oila a'zolari, manzil lug'ati
+                </div>
+                <div class="rm-item">Birinchi nutq: 1 daqiqa o'zim haqimda</div>
+                <div class="rm-item">Yozma: 5 jumlali o'z tavsifi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #0e7490">02</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Grammatika va Kundalik Muloqot</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> Do'st bilan inglizcha suhbat
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">7-8-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">Present Simple - kundalik harakatlar</div>
+                <div class="rm-item">Savol tuzish: Do you...? Does he...?</div>
+                <div class="rm-item">Dialog: Mening kundalik hayotim</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">9-10-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Past Simple: regular va 100 ta irregular verb
+                </div>
+                <div class="rm-item">Kecha nima qildim? Yesterday I...</div>
+                <div class="rm-item">Reading: oddiy qisqa matn + savollar</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">11-12-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">Future: Will + V1 va Going to</div>
+                <div class="rm-item">
+                  Vaqt iboralari: next week, tomorrow, soon
+                </div>
+                <div class="rm-item">
+                  Speaking: kelajak rejalarim - 2 daqiqa
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #0e7490">03</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Kommunikatsiya va Amaliyot</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Xorijlik bilan chat qura olasiz</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">13-16-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Do'konda, kafeda, transportda inglizcha
+                </div>
+                <div class="rm-item">
+                  Email tuzilmasi: Subject, Dear, Regards
+                </div>
+                <div class="rm-item">
+                  italki.com - xorijlik suhbatdosh bilan 15 daqiqa
+                </div>
+                <div class="rm-item">
+                  Podcast: English with Lucy, 6-Minute English
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #0e7490">04</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">IELTS Strategiyasi va Target</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> IELTS 6.0+ maqsad</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">19-22-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Business English: uchrashuvlar, taqdimotlar
+                </div>
+                <div class="rm-item">
+                  IELTS Listening: 4 section strategiyasi
+                </div>
+                <div class="rm-item">
+                  IELTS Reading: True/False/NG, Matching Headings
+                </div>
+                <div class="rm-item">Writing Task 1 va 2: 5 ta shablon</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">23-24-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Mock test: to'liq IELTS formati, natija tahlil
+                </div>
+                <div class="rm-item">Speaking Band 6+ strategiyasi</div>
+                <div class="rm-item">Intensiv mashq va takrorlash</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rm-web" class="roadmap-content roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #1d4ed8">01</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">HTML va CSS Asoslari</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Birinchi to'liq responsive sahifa</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">1-4-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">HTML: DOCTYPE, head, body, teglar</div>
+                <div class="rm-item">
+                  CSS: rang, shrift, Box model: margin, padding, border
+                </div>
+                <div class="rm-item">
+                  Flexbox: justify-content, align-items, gap
+                </div>
+                <div class="rm-item">
+                  Responsive: @media queries, mobile-first
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #1d4ed8">02</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">JavaScript</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Interaktiv sahifa yasaysiz</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">5-10-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  O'zgaruvchilar, funksiyalar, Array, Object
+                </div>
+                <div class="rm-item">
+                  DOM: element topish, o'zgartirish, event
+                </div>
+                <div class="rm-item">
+                  fetch() + async/await - API bilan ishlash
+                </div>
+                <div class="rm-item">
+                  Loyiha: to-do ro'yxat va ob-havo ilovasi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #1d4ed8">03</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">React va Deploy</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> 5 ta jonli sayt, portfolio tayyor</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">11-18-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  React: komponentlar, useState, useEffect, Router
+                </div>
+                <div class="rm-item">
+                  Netlify, Vercel, GitHub Pages - bepul deploy
+                </div>
+                <div class="rm-item">
+                  Mahalliy biznesga sayt topshirish: $50-200
+                </div>
+                <div class="rm-item">
+                  Portfolio: 5 ta sayt, hammasi internet da jonli
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rm-design" class="roadmap-content roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #5b21b6">01</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Dizayn Asoslari va Canva</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Professional flayer va SMM post</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">1-4-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Rang doirasi, tipografiya, kompozitsiya tamoyillari
+                </div>
+                <div class="rm-item">Canva: shablonlar, formatlash, export</div>
+                <div class="rm-item">
+                  Instagram post, stories, flayer - amaliy
+                </div>
+                <div class="rm-item">Loyiha: tadbirga chaqiruv flayeri</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #5b21b6">02</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Figma va Professional Dizayn</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> To'liq logo va brend identifikatsiyasi
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">5-10-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Figma: Frame, Component, Auto Layout, Prototip
+                </div>
+                <div class="rm-item">
+                  Logo dizayni: vektor, 3 variant, qora/oq/rang
+                </div>
+                <div class="rm-item">
+                  SMM kontent tizimi: feed, rang uyg'unligi
+                </div>
+                <div class="rm-item">
+                  Brend guideline: rang, shrift, logo tizimi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #5b21b6">03</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Real Loyihalar va Portfolio</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Behance portfolio, birinchi mijoz</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">11-16-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Vizitka, banner, packaging - print-ready
+                </div>
+                <div class="rm-item">UI dizayn: mobil ilova 5 ta ekran</div>
+                <div class="rm-item">Behance profil: 10+ real loyiha</div>
+                <div class="rm-item">Narx: logo=$30-150, SMM=50-200$/oy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rm-ai" class="roadmap-content roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #b45309">01</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">AI Asoslari va Prompt Engineering</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Har qanday vazifa uchun AI ishlatish</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">1-4-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  ChatGPT, Claude, Gemini - farqi va qachon qaysi
+                </div>
+                <div class="rm-item">
+                  Prompt engineering: kontekst + vazifa + format
+                </div>
+                <div class="rm-item">Role prompting, Chain of thought</div>
+                <div class="rm-item">
+                  O'z kasbingiz uchun 10 ta foydali prompt kutubxonasi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #b45309">02</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">AI Rasm va Kontent</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> Professional AI rasm va kontent tizimi
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">5-8-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Midjourney: /imagine, --ar, --v parametrlar
+                </div>
+                <div class="rm-item">
+                  Negative prompt, stil: photorealistic, illustration
+                </div>
+                <div class="rm-item">
+                  AI + Canva: kontent kalendar avtomatlashtirish
+                </div>
+                <div class="rm-item">1 oylik SMM kontent paketi AI bilan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #b45309">03</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">n8n Avtomatlashtirish</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> 3 ta real AI workflow ishga tushgan</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">9-12-hafta</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  n8n: workflow, trigger, action, webhook
+                </div>
+                <div class="rm-item">
+                  OpenAI API: to'g'ridan-to'g'ri ChatGPT ni qo'llash
+                </div>
+                <div class="rm-item">
+                  Telegram AI bot: savollarga AI javob beruvchi
+                </div>
+                <div class="rm-item">
+                  Loyiha: mijoz so'rovini qabul qilib AI javob tizimi
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rm-biznes" class="roadmap-content roadmap-modules">
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #991b1b">1-2</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Biznes Asosi va Bozor Tahlili</div>
+              <div class="rm-goal">
+                <i class="fas fa-bullseye"></i> G'oyani test qilib, auditoriyani aniqlay olasiz
+              </div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 1</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Business Model Canvas - o'z g'oyangiz uchun
+                </div>
+                <div class="rm-item">
+                  TAM / SAM / SOM: bozor hajmini hisoblash
+                </div>
+                <div class="rm-item">
+                  CustDev: 10 ta suhbat - savol tuzish va o'tkazish
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 2</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Raqib tahlil: SWOT, narx, kanal, xabar
+                </div>
+                <div class="rm-item">Maqsadli auditoriya portreti yaratish</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #991b1b">3-5</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Marketing, Moliya va Sotuv</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Birinchi mijozni mustaqil topasiz</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 3</div>
+              <div class="rm-items">
+                <div class="rm-item">Brend: ism, logo, ton, pozitsionirish</div>
+                <div class="rm-item">
+                  Kontent: Instagram, Telegram organik o'sish
+                </div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 4-5</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Unit economics: 1 mijozdan qancha foyda?
+                </div>
+                <div class="rm-item">
+                  Sotuv script: birinchi qo'ng'iroqdan to'lashgacha
+                </div>
+                <div class="rm-item">
+                  E'tirozlar: "Qimmat", "O'ylab ko'raman" - javoblar
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rm-module" onclick="toggleModule(this)">
+          <div class="rm-module-hdr">
+            <div class="rm-num" style="color: #991b1b">6-9</div>
+            <div class="rm-title-wrap">
+              <div class="rm-title">Jamoa, Huquq va Investor Pitch</div>
+              <div class="rm-goal"><i class="fas fa-bullseye"></i> Investor oldida 10 daqiqa pitch</div>
+            </div>
+            <div class="rm-chevron">&rsaquo;</div>
+          </div>
+          <div class="rm-weeks">
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 6-7</div>
+              <div class="rm-items">
+                <div class="rm-item">KPI va OKR: maqsad qanday o'lchanadi?</div>
+                <div class="rm-item">
+                  IP va OOO: qaysi biri, qachon, qancha?
+                </div>
+                <div class="rm-item">Shartnoma asoslari, soliq rejimlari</div>
+              </div>
+            </div>
+            <div class="rm-week">
+              <div class="rm-wlabel">Modul 8-9</div>
+              <div class="rm-items">
+                <div class="rm-item">
+                  Pitch deck: 10 slayd - Sequoia formati
+                </div>
+                <div class="rm-item">
+                  Valuatsiya: biznesingiz qancha turadi?
+                </div>
+                <div class="rm-item">
+                  Demo Day: real muxlislar oldida 10 daqiqalik pitch
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/logo.png" alt="" width="72" height="72" />
+          </div>
+          <div class="footer-copy">
+            <h3>Beshariq IT Center</h3>
+            <p>
+              IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy
+              o'quv markazi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <a class="footer-chip" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"
+            ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+          >
+          <a class="footer-chip" href="https://t.me/ITCBeshariq_admin"
+            ><i class="fab fa-telegram-plane"></i> Telegram</a
+          >
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

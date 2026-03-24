@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Web Dasturlash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="../index.html" class="nav-logo"><img src="../assets/logo.png" alt="" width="80" height="80" /></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Bosh sahifa</a></li>
+        <li><a href="../courses.html" class="active">Kurslar</a></li>
+        <li><a href="../roadmap.html">Roadmap</a></li>
+        <li><a href="../career.html">Karyera</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Rang rejimini almashtirish" aria-pressed="false" title="Rang rejimini almashtirish"><i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i></button>
+        <a href="../index.html#contact-info" class="nav-cta">Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="../index.html">Bosh sahifa</a>
+      <a href="../courses.html" class="active">Kurslar</a>
+      <a href="../roadmap.html">Roadmap</a>
+      <a href="../career.html">Karyera</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../contact.html">Aloqa</a>
+    </div>
+    <section class="course-page">
+      <div class="course-detail-hero">
+        <article class="course-detail-main reveal">
+          <a class="course-breadcrumb" href="../courses.html"><i class="fas fa-arrow-left"></i> Barcha kurslarga qaytish</a>
+          <div class="course-detail-header">
+            <div>
+              <div class="section-tag">Frontend</div>
+              <h1 class="section-title">WEB DASTURLASH</h1>
+              <p class="course-lead">Bu kurs sayt yasashni emas, <strong>internetga foydali mahsulot chiqarishni</strong> o'rgatadi. HTML, CSS, JavaScript va React orqali fikringizni kodga aylantirasiz.</p>
+            </div>
+            <div class="course-detail-icon"><i class="fas fa-code"></i></div>
+          </div>
+          <div class="course-detail-meta">
+            <div class="course-detail-pill">5–8 oy</div>
+            <div class="course-detail-pill">HTML, CSS, JavaScript</div>
+            <div class="course-detail-pill">React va deploy</div>
+          </div>
+          <div class="course-detail-grid">
+            <div class="course-detail-card"><h3>Yo'l xaritasi</h3><p>Avval sahifa tuzilishi, keyin chiroyli stillar, undan so'ng interaktivlik va zamonaviy komponentli frontend.</p></div>
+            <div class="course-detail-card"><h3>Portfolio</h3><p>Landing page, biznes sayt, form integratsiyasi va responsive ishlaydigan loyihalarni yig'ib borasiz.</p></div>
+            <div class="course-detail-card"><h3>Nima uchun kuchli?</h3><p>Siz yozgan kodni odamlar ko'radi, ishlatadi va baholaydi. Bu esa tez o'sish uchun juda katta motivatsiya beradi.</p></div>
+            <div class="course-detail-card"><h3>Natija</h3><p>Junior frontend ish o'rni, freelance buyurtmalari yoki keyingi fullstack bosqichi uchun tayyor baza paydo bo'ladi.</p></div>
+          </div>
+        </article>
+        <aside class="course-detail-side reveal reveal-delay-1">
+          <div class="course-side-stat"><strong>Birinchi loyiha</strong><span>Qisqa muddat ichida o'zingiz mustaqil chiroyli va responsiv landing page tayyorlay olasiz.</span></div>
+          <div class="course-side-stat"><strong>Asosiy urg'u</strong><span>Kod sifati, foydalanuvchi qulayligi va real ishlaydigan natijaga qaratiladi.</span></div>
+          <div class="course-side-stat"><strong>Kelajak</strong><span>Frontend'dan keyin fullstack, mobil yoki product yo'nalishlariga osonroq chiqasiz.</span></div>
+          <p class="course-side-note">Agar siz internetdagi saytlarni ko'rib "shuni men ham qilsam bo'lardi" deb o'ylagan bo'lsangiz, shu kurs aynan o'sha orzuni yoqadi.</p>
+          <a class="btn-primary course-enroll-btn" href="../contact.html" data-course-name="Web Dasturlash" data-course-lock="true">Ro'yxatdan o'tish</a>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main"><div class="footer-brand"><div class="footer-logo"><img src="../assets/logo.png" alt="" width="72" height="72" /></div><div class="footer-copy"><h3>Beshariq IT Center</h3><p>IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy o'quv markazi.</p></div></div></div>
+      <div class="footer-bottom"><div class="footer-meta"><a class="footer-chip" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"><i class="fas fa-phone"></i> +998 94 770 41-00</a><a class="footer-chip" href="https://t.me/ITCBeshariq_admin"><i class="fab fa-telegram-plane"></i> Telegram</a></div><p>&copy; 2025 Beshariq IT Center · Barcha huquqlar himoyalangan</p></div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,291 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Bosh sahifa</a></li>
+        <li><a href="./courses.html">Kurslar</a></li>
+        <li><a href="./roadmap.html">Roadmap</a></li>
+        <li><a href="./career.html">Karyera</a></li>
+        <li><a href="./faq.html" class="active">FAQ</a></li>
+        <li><a href="./contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="./index.html#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html">Bosh sahifa</a>
+      <a href="./courses.html">Kurslar</a>
+      <a href="./roadmap.html">Roadmap</a>
+      <a href="./career.html">Karyera</a>
+      <a href="./faq.html" class="active">FAQ</a>
+      <a href="./contact.html">Aloqa</a>
+    </div>
+
+    <section id="faq">
+      <div class="faq-shell">
+        <div class="faq-intro reveal">
+          <div class="section-tag">Savollar</div>
+          <h2 class="section-title">FAQ</h2>
+          <p class="section-sub">
+            Eng ko'p beriladigan savollarni bir joyga jamladik. Kurs, jadval,
+            natija va sinov darsi haqida tezda javob oling.
+          </p>
+          <div class="faq-highlight-grid">
+            <div class="faq-highlight-card">
+              <span class="faq-highlight-num">01</span>
+              <strong>Tez javob</strong>
+              <p>Eng muhim savollar uchun qisqa va aniq tushuntirishlar.</p>
+            </div>
+            <div class="faq-highlight-card">
+              <span class="faq-highlight-num">02</span>
+              <strong>Ota-ona uchun ham</strong>
+              <p>Jadval, natija va o'qish uslubi haqida tushunarli ma'lumot.</p>
+            </div>
+          </div>
+          <label class="faq-search" for="faqSearch">
+            <span class="faq-search-label">Savolni qidiring</span>
+            <span class="faq-search-input-wrap">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input
+                id="faqSearch"
+                type="search"
+                placeholder="Masalan: kompyuter, jadval, ish"
+                autocomplete="off"
+              />
+            </span>
+          </label>
+        </div>
+
+        <div class="faq-list reveal reveal-delay-1" id="faqList">
+          <div class="faq-empty" id="faqEmpty" hidden>
+            <div class="faq-empty-icon"><i class="fas fa-search"></i></div>
+            <strong>Hech narsa topilmadi</strong>
+            <p>Boshqa kalit so'z bilan qidirib ko'ring.</p>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="kompyuter telefon python dizayn boshlash qurilma"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-mobile-screen-button" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Kompyuterim yo'q - o'qiy olamanmi?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Ha. Birinchi 1-2 oy barcha kurslarni telefon bilan boshlash
+                mumkin. Python - Pydroid3, Dizayn - Canva mobile, Ingliz tili -
+                telefonda ham davom etadi. Kompyuter kerak bo'lganda markaz
+                kompyuteri bor va dars vaqtida foydalanasiz.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="pul daromad ish qancha vaqt dizayn python web ai"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-coins" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Qancha vaqtda pul ishlab boshlayman?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Dizayn odatda 2-4 oyda, Python bot yo'nalishi 3-5 oyda, Web
+                dasturlash 4-6 oyda, AI vositalari esa tezroq natija bera
+                boshlaydi. Natija sizning intizom va amaliyotga ajratgan
+                vaqtingizga ham bog'liq.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="jadval maktab vaqt kechqurun dam olish kunlari"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-calendar-days" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Dars jadvali maktab bilan mos keladimi?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Ha. Darslar maktabdan keyingi vaqtlar va dam olish kunlariga
+                moslab tuzilgan. Ota-onalar uchun ham muntazam aloqa bo'ladi,
+                shuning uchun jarayon kuzatib boriladi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="ish portfolio github behance freelance upwork yordam"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-briefcase" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Kurs tugagandan keyin ish topishda yordam berasizmi?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Ha. Portfolio tayyorlash, GitHub yoki Behance profilini sozlash,
+                freelance platformalarda boshlash va suhbatga tayyorlanishda
+                yordam beramiz. Kuchli bitiruvchilarga tavsiya ham beriladi.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="ikki kurs bir vaqtda ingliz it birga"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-layer-group" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Bir vaqtda 2 ta kurs o'qish mumkinmi?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Mumkin, lekin boshida bitta asosiy yo'nalishga fokus qilish
+                foydaliroq. Keyin esa Ingliz tili + IT kabi bir-birini
+                kuchaytiradigan kurslarni birga olib borish mumkin.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="faq-item"
+            onclick="toggleFaq(this)"
+            data-faq-keywords="sinov bepul dars qaror ko'rib ota-ona"
+          >
+            <button class="faq-q">
+              <span class="faq-q-lead">
+                <span class="faq-q-badge"
+                  ><i class="fas fa-circle-check" aria-hidden="true"></i
+                ></span>
+                <span class="faq-q-text"
+                  >Sinov darsini ko'rib qaror qilsam bo'ladimi?</span
+                >
+              </span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-a">
+              <p>
+                Albatta. Sinov darsida muhitni ko'rasiz, ustoz bilan tanishasiz
+                va kurs sizga mosligini his qilasiz. Shundan keyin bemalol qaror
+                qilishingiz mumkin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/logo.png" alt="" width="72" height="72" />
+          </div>
+          <div class="footer-copy">
+            <h3>Beshariq IT Center</h3>
+            <p>
+              IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy
+              o'quv markazi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <a
+            class="footer-chip"
+            href="#"
+            data-copy-text="+998947704100"
+            data-copy-label="Telefon raqami nusxalandi"
+          >
+            <i class="fas fa-phone"></i> +998 94 770 41-00</a
+          >
+          <a class="footer-chip" href="https://t.me/ITCBeshariq_admin"
+            ><i class="fab fa-telegram-plane"></i> Telegram</a
+          >
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

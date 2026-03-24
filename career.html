@@ -1,0 +1,194 @@
+﻿<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beshariq IT Center | Karyera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="./index.html" class="nav-logo">
+        <img src="./assets/logo.png" alt="" width="80" height="80" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Bosh sahifa</a></li>
+        <li><a href="./courses.html">Kurslar</a></li>
+        <li><a href="./roadmap.html">Roadmap</a></li>
+        <li><a href="./career.html" class="active">Karyera</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Aloqa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Rang rejimini almashtirish"
+          aria-pressed="false"
+          title="Rang rejimini almashtirish"
+        >
+          <i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+        </button>
+        <a href="./index.html#contact-info" class="nav-cta"> Qo'ng'iroq</a>
+      </div>
+      <div class="nav-burger" id="burger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="./index.html">Bosh sahifa</a>
+      <a href="./courses.html">Kurslar</a>
+      <a href="./roadmap.html">Roadmap</a>
+      <a href="./career.html" class="active">Karyera</a>
+      <a href="./faq.html">FAQ</a>
+      <a href="./contact.html">Aloqa</a>
+    </div>
+
+<!-- CAREER -->
+    <section id="career">
+      <div class="section-tag">Karyera Xaritasi</div>
+      <h2 class="section-title reveal">KURSDAN KEYIN</h2>
+      <p class="section-sub reveal reveal-delay-1">
+        Real lavozimlar, real daromad - bizning bitiruvchilarimiz qayerda va
+        qancha ishlaydi.
+      </p>
+
+      <div class="career-grid">
+        <div class="career-card reveal" style="--cc-color: #0e7490">
+          <div class="career-role">IELTS 6.5+ Talabasi</div>
+          <span class="career-sal">Grant</span>
+          <div class="career-where">
+            Xorij universitetlari, DAAD, Fulbright, Mushtarak
+          </div>
+          <div class="career-course">Ingliz Tili</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-1"
+          style="--cc-color: #166534"
+        >
+          <div class="career-role">Telegram Bot Developer</div>
+          <span class="career-sal">$300-1000</span>
+          <div class="career-where">
+            Freelance, mahalliy kompaniyalar, Upwork
+          </div>
+          <div class="career-course">Python</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-2"
+          style="--cc-color: #1d4ed8"
+        >
+          <div class="career-role">Frontend Developer</div>
+          <span class="career-sal">$400-1200</span>
+          <div class="career-where">
+            IT kompaniyalar, agentliklar, remote ish
+          </div>
+          <div class="career-course">Web Dasturlash</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-3"
+          style="--cc-color: #5b21b6"
+        >
+          <div class="career-role">UI/UX Designer</div>
+          <span class="career-sal">$400-1200</span>
+          <div class="career-where">IT startaplar, agentliklar, Fiverr</div>
+          <div class="career-course">Grafik Dizayn</div>
+        </div>
+        <div class="career-card reveal" style="--cc-color: #b45309">
+          <div class="career-role">AI Prompt Engineer</div>
+          <span class="career-sal">$300-1000</span>
+          <div class="career-where">IT kompaniyalar, marketing, freelance</div>
+          <div class="career-course">AI Kursi</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-1"
+          style="--cc-color: #991b1b"
+        >
+          <div class="career-role">Startup Asoschisi</div>
+          <span class="career-sal">Grant+</span>
+          <div class="career-where">
+            IT Park, Founder Institute, akseleratorlar
+          </div>
+          <div class="career-course">Biznes Kursi</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-2"
+          style="--cc-color: #c2410c"
+        >
+          <div class="career-role">Rus tili mutaxassisi</div>
+          <span class="career-sal">$200-500</span>
+          <div class="career-where">Savdo kompaniyalar, turizm, eksport</div>
+          <div class="career-course">Rus Tili</div>
+        </div>
+        <div
+          class="career-card reveal reveal-delay-3"
+          style="--cc-color: #9d174d"
+        >
+          <div class="career-role">Koreya Universiteti</div>
+          <span class="career-sal">Stipendiya</span>
+          <div class="career-where">Seoul, KAIST, Yonsei - GKS dasturi</div>
+          <div class="career-course">Koreys Tili</div>
+        </div>
+        <div class="career-card reveal" style="--cc-color: #ffc300">
+          <div class="career-role">Data Analyst</div>
+          <span class="career-sal">$400-1200</span>
+          <div class="career-where">Kompaniyalar, bank, online ish</div>
+          <div class="career-course">Python</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./assets/logo.png" alt="" width="72" height="72" />
+          </div>
+          <div class="footer-copy">
+            <h3>Beshariq IT Center</h3>
+            <p>
+              IT, dizayn va tillar bo'yicha amaliy natija beradigan zamonaviy
+              o'quv markazi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-meta">
+          <a class="footer-chip" href="#" data-copy-text="+998947704100" data-copy-label="Telefon raqami nusxalandi"
+            ><i class="fas fa-phone"></i> +998 94 770 41-00</a
+          >
+          <a class="footer-chip" href="https://t.me/ITCBeshariq_admin"
+            ><i class="fab fa-telegram-plane"></i> Telegram</a
+          >
+        </div>
+        <p>&copy; 2025 Beshariq IT Center - Barcha huquqlar himoyalangan</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
